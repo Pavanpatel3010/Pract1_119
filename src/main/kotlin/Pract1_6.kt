@@ -1,29 +1,20 @@
-fun main(){
-    println("enter the number 1")
-    var x:Int= readLine()!!.toInt()
-    println("enter the number 2")
-    var y:Int= readLine()!!.toInt()
-    println("enter the number 3")
-    var z:Int= readLine()!!.toInt()
-    add(x,y,z)
-    sub(x,y,z)
-    mul(x,y,z)
-    div(x,y)
+fun userDefine() {
+    arithmetic()
 }
-fun add(n1:Int,n2:Int,n3:Int)
-{
-    println("Addition of $n1 ,$n2 ,$n3 is ${n1+n2+n3}")
+fun arithmetic() {
+    val x: Int = 111
+    val y: Int = 2222
+    val z: Int = -222
 
-}
-fun sub(n1:Int,n2:Int,n3:Int)
-{
-    println("substraction of $n1 ,$n2 ,$n3 is ${n1-n2-n3}")
-}
-fun mul(n1:Int,n2:Int,n3:Int)
-{
-    println("multiplication of $n1 ,$n2 ,$n3 is ${n1*n2*n3}")
-}
-fun div(n1:Int,n2:Int)
-{
-    println("division of $n1 ,$n2  is ${n1/n2}")
+    var ans = x + y + z
+    println("Addition of $x, $y, $z is $ans")
+
+    ans = x - y - z
+    println("Subtraction of $x, $y, $z is $ans")
+
+    ans = x * y * z
+    println("Multiplication of $x, $y, $z is $ans")
+
+    ans = y / x
+    println("Division of $x, $y is $ans")
 }

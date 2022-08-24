@@ -1,26 +1,28 @@
-fun main()
-{
-    println("enter the month number:")
-    var m:Int= readLine()!!.toInt()
-    when(m){
+fun main() {
+    var flag: Int = 1;
+    while (flag == 1) {
 
-        1 -> println("january")
-        2 -> println("february")
-        3 -> println("March")
-        4 -> println("april")
-        5 -> println("may")
-        6 -> println("june")
-        7 -> println("july")
-        8 -> println("August")
-        9 -> println("september")
-        10 -> println("october")
-        11-> println("november")
-        12-> println("december")
-        else -> println("enter the proper number:")
+        println("Enter month number:")
 
+        val input = readLine()!!
+        val month: Int = input.toInt()
+        if (month > 0 && month <= 12) {
+            flag = 0
+            when (month) {
+                1 -> println("Month 1 -> January")
+                2 -> println("Month 2 ->  February")
+                3 -> println("Month 3 -> March")
+                4 -> println("Month 4 -> April")
+                5 -> println("Month 5 -> May")
+                6 -> println("Month 6 -> June")
+                7 -> println("Month 7 -> July")
+                8 -> println("Month 8  -> August")
+                9 -> println("Month 9 ->  September")
+                10 -> println("Month 10 -> October")
+                11 -> println("Month 11 ->  November")
+                12 -> println("Month 12 -> December")
 
-
-
-
+            }
+        }
     }
 }

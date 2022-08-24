@@ -1,13 +1,10 @@
-fun main()
-{
-    println("enter any number:")
-    var x:Int= readLine()!!.toInt()
-    if(x%2==0)
-    {
-        println("$x is a even number:")
-    }
-    else
-    {
-        println("$x is a odd number:")
+fun main(args: Array<String>) {
+    print("Enter any number:")
+    val a = readLine()!!.toInt()
+
+    if (a % 2 == 0) {
+        println("$a is even")
+    } else {
+        println("$a is odd")
     }
 }
